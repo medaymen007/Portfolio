@@ -23,7 +23,7 @@ function Portfolio() {
 
   return (
     <div>
-       <div className="portfolio">
+       <div className="portfolio" id='PORTFOLIO'>
             <h2 className="portfolio-title"><span>My</span> Portfolio</h2>
             <ul className="portfolio-list">
                 <li className="portfolio-item active">All</li>

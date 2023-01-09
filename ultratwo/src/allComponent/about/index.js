@@ -4,7 +4,7 @@ import "./style.css"
 function About() {
   return (
     
-       <div className="creative">
+       <div className="creative" id='ABOUT'>
             <div className="container">
                 <div className="creative-info">
                     <h2 className="info-title"><span>This is</span> Me</h2>

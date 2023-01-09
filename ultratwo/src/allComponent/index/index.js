@@ -10,7 +10,7 @@ import Work from "../work";
 function Index() {
   return (
     <div className="App">
-     <Home/>
+     <Home />
      <Work/>
      <Portfolio/>
      <Profile/>

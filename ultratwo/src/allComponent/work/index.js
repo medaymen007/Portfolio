@@ -18,7 +18,7 @@ const workItems=tabWork.map((elm)=>{
 
   return (
     <div>
-      <div className="work">
+      <div className="work" id='WORK' >
             <div className="container">
                 <h2 className="work-title"><span>My</span> Work</h2>
                {workItems}

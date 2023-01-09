@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import {Scrollbar} from 'smooth-scrollbar-react';
 import  "./style.css"
 function NevBar() {
   return (
@@ -14,16 +15,21 @@ function NevBar() {
        
         
         <ul className="ul-list">
+        <Scrollbar
+          damping={1}
+          thumbMinSize={10}
+          renderByPixels={true}
+          alwaysShowTracks={true}
+          continuousScrolling={true}
+>
             <li className="list-item"><Link to="/">Home</Link></li>
-            <li className="list-item"><a href="#">Work</a></li>
-            <li className="list-item"><a href="#">Portfolio</a></li>
-            <li className="list-item"><a href="#">Resume</a></li>
-            <li className="list-item"><a href="#">About</a></li>
-            <li className="list-item"><Link to={"/contact"} >Contact</Link></li>
+            <li className="list-item"><a href="#WORK">Work</a></li>
+            <li className="list-item"><a href="#PORTFOLIO">Portfolio</a></li>
+            <li className="list-item"><a href="#ABOUT">About</a></li>
+            <li className="list-item"><Link to={"/contact"} >Contact</Link></li>   
+         </Scrollbar>   
         </ul>
-        
     </div>
-    
 </div>
   )
 }
